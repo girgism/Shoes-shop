@@ -1,0 +1,372 @@
+*{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	margin: 0;
+}
+
+.contain{
+	margin: auto;
+}
+
+.navpar{
+	padding: 1% 0;
+    z-index: 2;
+	height: 100%;
+    color: white;
+    width: 100%;
+    position:fixed;
+   transition: 1s; 
+}
+
+.navpar h1{
+	display: inline-block;
+	float: left;
+	width: 40%;
+	cursor: pointer;
+	font-size: 60px;
+}
+
+.navpar h1 span{
+    color:brown;
+}
+.navpar ul{
+	width: 57%;
+	float: left;
+	margin-top: 2%;
+}
+.navpar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 3%;
+	text-transform:capitalize;
+	font-size: 20px;
+	cursor: pointer;
+}
+.navpar ul .active{
+	color: darkcyan;
+}
+.navpar ul li:hover{
+	color: #489E8E;
+	border-bottom: 1px solid #489E8E;
+}
+
+.navpar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.head{
+    background-image: url(../pc/pic03.jpg);
+    height: 20%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.head .opac{
+    height: 13%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+
+.about-us{
+    margin: 2% 0;
+    padding-bottom: 20%;
+}
+
+.about-us h2:after{
+    content: '';
+    width: 10%;
+    border: 2px solid #333;
+    display: block;
+}
+
+.about-us .iconspar{
+    width: 33.333%;
+    float: left;
+    margin-top: 3%;
+}
+
+.about-us .iconspar .icon{
+	float: left;
+	height: 100%;
+	width: 30%;
+	font-size: 30px;
+	color:darkgreen;
+}
+
+.about-us .iconspar .describe{
+	float: left;
+	width: 70%;
+}
+
+.clear-fix{clear: both;}
+
+.ourteam {
+   height: 30%;
+}
+
+.ourteam hr{
+    border: 1px solid #D7D7D6;
+    margin:  3.5% 0;
+}
+.ourteam .left{
+    width: 35%;
+    float: left;
+    height: 100%;
+}
+.ourteam .left h1{
+    font-size: 25px;
+}
+.ourteam .left p{
+    font-size: 15px;
+    line-height:inherit;
+}
+.ourteam .right{
+    width: 65%;
+    float: left;
+    height: 150px;
+}
+.ourteam .right .image{
+    float: right;
+    display: inline;
+    width: 23%;
+    height: 100%;
+    margin-left: 10px;
+    display: inline;
+   
+    cursor: pointer;
+}
+.showimg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    background-color: rgba(0,0,0,.8);
+    transition: .5s;
+    
+}
+.imagehere .close{
+    position: relative;
+    top: 0;
+    left: 0;
+    color: #333;
+    font-size: 60px;
+    background:none;
+    float: none;
+    opacity: 1;
+    padding: 10px;
+    display: block;
+    text-align: right;
+    border: 1px solid #eee;
+}
+.imagehere{
+    height: 50%;
+    width: 50%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+     margin: 226px  auto;
+    border: 3px solid #F8F8F8;
+    padding: 0;
+}
+.port .container{
+    width: 1200px;
+}
+
+ .over{
+   
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+    text-align: center;
+    color: #FFF;
+    display: none;
+     position: relative;
+}
+ .over h4{margin: 0;padding: 0; position: relative; top: 60px;line-height: 100%;}
+.testmoia {
+    margin: 100px 0;
+    text-align: center;
+    background: url('../pc/03.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+.testmoia .theopacity{
+    top: 0;
+    padding:10% 10%;
+    left: 0;
+    position: relative;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+}
+.testmoia .theopacity h1{
+    margin-bottom: 2%;
+    font-size: 50px;
+}
+
+}
+.port{
+    padding: 30px 0;
+    height: 811.25px;
+}
+.port ul {
+    margin: 60px 0;
+}
+.port ul li{
+    list-style: none;
+    display: inline;
+    padding: 10px 20px ;
+    border: 1px solid #DDDDDD;
+    color: #AAA;
+    font-size: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.port ul .active{
+    background-color: #0DAD8D;
+    border-color: #0DAD8D;
+    color: aliceblue;
+    
+}
+
+p{
+    color: #999;
+    line-height: 1.5;
+    font-size: 20px;
+}
+.testmoia .theopacity h4 span{
+    color: #489E8E;
+    cursor: pointer;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-transform: capitalize;
+    
+}
+.testmoia .theopacity h4 i{
+    color: brown;
+}
+.port .images .row .img:nth-child(1),.port .images .row .img:nth-child(3){margin: 0 1% ;}
+.port .images .row .img{
+    width: 23%;
+    color: red;
+    float: left;
+    height: 250px;
+    background-size: cover
+}
+.port .images .row .img img{
+    width: 100%;
+    height: 100%;
+}
+.port .images .row:nth-child(2){
+    margin-top: 3%;
+}
+.port .images{
+    margin: 2% 0%;
+}
+
+footer{
+    color:aliceblue;
+     background-color:black;
+     height: 100%;
+    overflow: hidden;
+    padding: 2% 0;
+}
+footer .about ,footer .tags ,footer .posts,footer .blog{
+    float: left;
+    width: 25%;
+    
+}
+footer div h1{
+    font-size: 25px;
+    color:bisque;
+	margin-top: auto;
+    margin-bottom:auto;
+}
+footer .about p{
+	margin-left: 4%;
+    font-size: 20px;
+    line-height: 1.25;
+}
+footer .about .is{
+    margin-top: 1.55%;
+    padding: 2% 1%;
+}
+footer .about .is i{
+    border: 1px solid green;
+    border-radius: 2px;
+    padding: 2% 3%;
+    margin: 0% 2%;
+    cursor: pointer;
+}
+footer .tags ul li{
+    list-style: none;
+    display: inline;
+    float: left;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    padding: 10px 20px;
+    margin: 5px 7px;
+    cursor: pointer;
+}
+footer .blog ul li{
+    list-style: none;
+    display: inherit;
+    border-bottom:1px solid #DDD;
+    padding: 15px 2px;
+    text-align: left;
+    cursor: pointer;
+}
+footer .posts div{
+    margin: 10px 0;
+    overflow: hidden;
+    line-height: 100%;
+}
+footer .posts div .img{
+    float: left;
+    height: 50px;
+    width: 40%;
+    background-size: cover;
+    
+}
+footer .posts div h4{
+    font-size: 15px;
+    font-weight: 100;
+    float: right;
+    width: 58%;
+    margin-top: 10px;
+}
+footer .posts div p{
+    font-size: 15px;
+    margin-left: 123px;
+}
+.counter{
+    background-color: #0DBF9B;
+    overflow: hidden;
+    margin: 1% 0%;
+}
+.counter .ke h1{
+    font-size: 40px;
+}
+.counter .ke{
+   color: dimgray;
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 2% 0%;
+}
+
+.counter .ke p{
+    color:darkslategray;
+}
